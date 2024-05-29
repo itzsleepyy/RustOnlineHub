@@ -29,7 +29,3 @@ class Deck {
     }
 
 }
-// public static void main (String Args[]) {
-// Testing
-
-// }
