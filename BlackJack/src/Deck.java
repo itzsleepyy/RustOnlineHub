@@ -1,10 +1,9 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Deck {
-    private List<Card> cards;
+public class Deck {
+    private List<Object> cards;
 
     public Deck() {
         cards = new ArrayList<>();
@@ -25,7 +24,7 @@ class Deck {
     }
 
     public Card drawCard() {
-        return cards.remove(0);
+        return (Card) cards.remove(0);
     }
 
 }

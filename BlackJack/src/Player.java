@@ -53,8 +53,18 @@ public class Player {
         balance += 2 * bet;
     }
 
+    public void tieBet(){
+        balance += bet;
+    }
+
+    @Override
+    public String toString(){
+        return "Hand: " + hand + ", Score: " + score + ", Balance: $" + balance;
+    }
+
+
 
 }
-public static void main(String Args[]) {
+//public static void main(String Args[]) {
 
-}
+//}
