@@ -45,13 +45,21 @@ public class Player {
         }
     }
 
-    public int getBet(){
+    public int getBet() {
         return bet;
     }
 
-    public void winBet(){
+    public void winBet() {
         balance += 2 * bet;
     }
 
+    public void tieBet() {
+        balance += bet;
+    }
+
+    @Override
+    public String toString() {
+        return "Hand: " + hand + ", Score: " + score + ", Balance: $" + balance;
+    }
 
 }
